@@ -91,9 +91,10 @@
   !*** ./client/dashboard/app/index.js ***!
   \***************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log(\"Hello from the other side\");\n\n//# sourceURL=webpack:///./client/dashboard/app/index.js?");
+"use strict";
+eval("\n\nconsole.log(\"Hello from the other side\");\nconsole.log(\"Is this thing on?\");\nconsole.log(\"Let's check it out!\");\n\n//# sourceURL=webpack:///./client/dashboard/app/index.js?");
 
 /***/ }),
 

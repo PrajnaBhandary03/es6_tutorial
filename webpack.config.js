@@ -1,14 +1,15 @@
 const path = require('path');
 
 module.exports = {
-    entry : ['./client/dashboard/app/index.js'],
+    entry : ['webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server', path.resolve(__dirname, 'client/dashboard/app/index.js')],
     output : {
         path: path.resolve(__dirname, 'dist'),
         filename : 'bundle.js'
     },
     mode : 'development',
     module : {
-        loaders : [
+        rules : [
             {
                 loader : 'babel-loader',
                 test : /\.js$/,
@@ -19,6 +20,7 @@ module.exports = {
     devServer : {
         port : 3000,
         contentBase : path.resolve(__dirname, 'dist'),
-        inline : true
+        inline : true,
+        hot : true
     }
 }

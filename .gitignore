@@ -5,3 +5,6 @@
 
 # excluding node module addition
 node_modules/
+
+# file for trial
+exp.js
