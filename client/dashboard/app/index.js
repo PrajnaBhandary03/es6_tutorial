@@ -33,6 +33,12 @@ set_a.education.field = "Computer SCience";
 set_a.education.year = '1998';
 console.log(set_a.education.hasOwnProperty('year'));
 
+console.log("catterpillar".startsWith('cat'));
+console.log("catterpillar".endsWith('pillar'));
+console.log("catterpillar".includes('pill'));
+console.log("catterpillar".includes('scatter'));
+
+
 
 
 
